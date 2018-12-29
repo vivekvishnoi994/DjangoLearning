@@ -30,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="first_app\admin.py" />
+    <Compile Include="first_app\apps.py" />
+    <Compile Include="first_app\migrations\__init__.py" />
+    <Compile Include="first_app\models.py" />
+    <Compile Include="first_app\tests.py" />
+    <Compile Include="first_app\views.py" />
+    <Compile Include="first_app\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="BasicProject\__init__.py" />
     <Compile Include="BasicProject\settings.py" />
@@ -37,10 +44,15 @@
     <Compile Include="BasicProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="first_app\templates\first_app\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BasicProject\" />
+    <Folder Include="first_app\" />
+    <Folder Include="first_app\migrations\" />
+    <Folder Include="first_app\templates\" />
+    <Folder Include="first_app\templates\first_app\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
